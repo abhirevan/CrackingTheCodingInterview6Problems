@@ -4,6 +4,21 @@ import ds.utils.SingleLinkedList;
 
 public class Problem_2_3 {
 	
+	public static void deleteNodeHeadVoid(SingleLinkedList head)
+	{
+		
+		if(head == null || head.next==null)
+		{
+			System.err.println("Failure");
+			return;
+		}
+		
+		head.data = head.next.data;
+		head.next = head.next.next;
+		
+		
+	}
+	
 	
 
 	public static void main(String[] args) {
@@ -17,6 +32,8 @@ public class Problem_2_3 {
 		
 		//System.out.println("K=2-> "+findKNode(list,4));
 		//findKNodeRecursive(list,4);
+		deleteNodeHeadVoid(list.next.next.next);
+		list.printList();
 		
 
 	}
