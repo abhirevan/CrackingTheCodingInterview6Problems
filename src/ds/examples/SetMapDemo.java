@@ -18,6 +18,7 @@ public class SetMapDemo {
 		
 		for(String w:data)
 		{
+			System.out.print(w+" ");
 			hs.add(w);
 			lhs.add(w);
 			ts.add(w);
@@ -33,6 +34,7 @@ public class SetMapDemo {
 			lhm.put(w,freq);
 			tm.put(w,freq);
 		}
+		System.out.println();
 		
 	      /* this prints the HashSet */
 	      System.out.println("Hash set: " + hs);
@@ -60,5 +62,7 @@ public class SetMapDemo {
 		
 		
 	}
+	
+	
 
 }
